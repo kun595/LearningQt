@@ -34,7 +34,7 @@ void Widget::on_cancelButton_clicked()
     this->close();
 }
 
-
+//在ui设计界面点击转到槽自动生成的对象，使用dialog浏览文件窗口关闭后会再打开一次，解决方法是不使用自动生成的默认命名所以在后加了notauto
 void Widget::on_browseButton_clickednotauto()
 {
     QString fillPath = QFileDialog::getOpenFileName(this, "选择文件");
